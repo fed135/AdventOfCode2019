@@ -1,0 +1,2 @@
+//192 bytes
+console.log(require('fs').readFileSync('../input.txt').toString().split('\n').reduce((a,c)=>{d=e=>Math.max(0,Math.floor(Number(e)/3-2));f=d(c);g=f;while(g > 0){;g = d(g);f += g}return a+f},0))
